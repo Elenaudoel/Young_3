@@ -4,7 +4,7 @@ $banco_de_dados = "login";
 $usuario = "root";
 $senha = "";
 
-$myaqli = new mysqli($sevidor,$usuario,$senha,$banco_de_dados);
+$mysqli = new mysqli($sevidor,$usuario,$senha,$banco_de_dados);
 
 if($mysqli -> error)
    die("Falha ao conectar ao banco de dados :( ")
