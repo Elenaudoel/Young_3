@@ -28,13 +28,13 @@ $resultado = $mysqli->query($sql);
             <?php
             if ($resultado->num_rows > 0) {
                 while ($linha = $resultado->fetch_assoc()) {
-                    echo'<tr>';
-                     echo'<td>'.$linha['id']. '</td>';
-                     echo'<td>'.$linha['nome']. '</td>';
-                     echo'<td>'.$linha['valor']. '</td>';
-                     echo'<td>'.$linha['quantidade']. '</td>';
-                     echo '<td><a href="editar_produto.php?id='. $linha['id'] .'">Editar</a> | <a href="deletar_produto.php?id='. $linha['id'] .'">Deletar</a></td>';
-                    echo'</tr>';
+                    echo '<tr>';
+                    echo '<td>' . $linha['id'] . '</td>';
+                    echo '<td>' . $linha['nome'] . '</td>';
+                    echo '<td>' . $linha['valor'] . '</td>';
+                    echo '<td>' . $linha['quantidade'] . '</td>';
+                    echo '<td><a href="editar_produto.php?id=' . $linha['id'] . '">Editar</a> | <a href="deletar_produto.php?id=' . $linha['id'] . '">Deletar</a></td>';
+                    echo '</tr>';
                 }
             }
             ?>
