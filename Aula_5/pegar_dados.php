@@ -3,6 +3,9 @@ include('../Connections/connections.php');
 
 $codigo_sql = "SELECT * FROM pessoas";
 $resultado = $mysqli->query($codigo_sql);
+<<<<<<< HEAD
+var_dump($resultado);
+=======
 
 if ($resultado->num_rows > 0)
 {
@@ -20,4 +23,5 @@ if ($resultado->num_rows > 0)
     }
 }
 $mysqli->close();
+>>>>>>> 9ef93a1b6123bae6f48b2c9a225c07a4bc0d6d33
 ?>
