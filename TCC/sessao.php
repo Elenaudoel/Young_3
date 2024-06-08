@@ -2,6 +2,7 @@
 
 include('..//Connections/connections.php');
 
+
 session_start();
 if (isset($_SESSION['user'])) {
     header('location: painel.php');
@@ -24,3 +25,4 @@ if (isset($_SESSION['user'])) {
         }
     }
 }
+

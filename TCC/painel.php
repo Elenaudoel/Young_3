@@ -1,6 +1,9 @@
 <?php
 session_start();
-$nome_usuario = $_SESSION['user'];
+$nome_user = $_SESSION['user'];
+include('../Connections/connections.php');
+$sql = 'SELECT * FROM armazem';
+$resultado = $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -11,10 +14,15 @@ $nome_usuario = $_SESSION['user'];
     <title>painel</title>
 </head>
 <body>
-    <h1>Bem vindo <?php echo $nome_usuario;?></h1>
+    <h1>Bem vindo <?php echo $nome_user;?></h1>
     <p> <a href="logout.php">sair </a> </p>
-    <a href="https://www.hupishop.com.br/tenis-olympikus-barra-masculino-cinza-e-preto/p/3751">
-        <img src="https://static.hupishop.com.br/public/hupibikes/imagens/produtos/tenis-olympikus-barra-masculino-cinza-e-preto-637533390b9e0.png" alt=""> <h2>Tênis Olympikus Barra Masculino Cinza e Preto <br> preço:179,90</h2>
+    <a> <?php if ($resultado->num_rows > 0) {
+                while ($linha = $resultado->fetch_assoc()) {
+                    echo '<tr>';
+                    echo '<td>' . $linha['nome'] . '</td>';
+                    echo '<td>' . $linha['valor'] . '</td>';
+        ?>
+        <img src="">
     </a>
 
     <footer>
