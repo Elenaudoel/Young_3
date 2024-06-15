@@ -21,8 +21,10 @@ $resultado = $mysqli->query($sql);
                     echo '<tr>';
                     echo '<td>' . $linha['nome'] . '</td>';
                     echo '<td>' . $linha['valor'] . '</td>';
+                }
+            }
         ?>
-        <img src="">
+        <img class="tenis_o "src=". $linha['valor'] .">
     </a>
 
     <footer>
