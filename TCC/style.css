@@ -7,6 +7,22 @@
     font-family: 'Playpen Sans', cursive;
 }
 
-img.tenis_o{
-    
+body{
+    display: flex;
+    background-color: #addefe;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;/* alianha na horizontal*/
+    align-items: center; /* alianha na vertical*/
+    flex-direction: column;
+}
+img.img_tenis{
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+footer{
+    padding: 40px;
 }
