@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Tela de Login
-    </h1>
     <form action="sessao.php" method="post">
+        <h1 class="titulo-conteudo">
+            Tela de Login
+        </h1>
         <div>
             <label for="user">Usuário</label>
             <input type="text" name="user" id="user">
