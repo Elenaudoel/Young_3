@@ -15,17 +15,21 @@ $resultado = $mysqli->query($sql);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem vindo <?php echo $nome_user;?></h1>
-    <p> <a href="logout.php">sair </a> </p>
-    <a> <?php if ($resultado->num_rows > 0) {
-                while ($linha = $resultado->fetch_assoc()) {
-                    echo '<tr>';
-                    echo '<a href="'.$linha['site'].'">' . $linha['nome']  . '</a>';
-                    echo '<td>' . $linha['valor'] . '</td>';
-                    echo '<img class="img_tenis" src="' . $linha['link'] . '">';
-                }
+    
+        <h1>Bem vindo <?php echo $nome_user;?></h1>
+        <p> <a href="logout.php">sair </a> </p>
+    
+    
+        <a> <?php if ($resultado->num_rows > 0) {
+            while ($linha = $resultado->fetch_assoc()) {
+                echo '<tr>';
+                echo '<a href="'.$linha['site'].'">' . $linha['nome']  . '</a>';
+                echo '<td>' . $linha['valor'] . '</td>';
+                echo '<img class="img_tenis" src="' . $linha['link'] . '">';
             }
+        }
         ?>
+  
     </a>
 
     <footer>
