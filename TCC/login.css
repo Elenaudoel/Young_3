@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(255, 47, 10), rgb(171, 144, 10));
+    display: flex;
+    justify-content: center;
+    /* alianha na horizontal*/
+    align-items: center;
+    /* alianha na vertical*/
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+form {
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-conteudo {
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.user-conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-conteudo input {
+    border-radius: 20px;
+    height: 30px;
+}
+
+
+.pass-conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pass-conteudo input {
+    border-radius: 20px;
+    height: 30px;
+}
+ 
+.btns{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+button{
+    width: 70%;
+    background-color: black;
+    color: aliceblue;
+    height: 30px;
+    border-radius: 10px;
+    border-style:none;
+}
