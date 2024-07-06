@@ -4,6 +4,7 @@ $nome_user = $_SESSION['user'];
 include('../Connections/connections.php');
 $sql = 'SELECT * FROM armazem';
 $resultado = $mysqli->query($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -36,8 +37,7 @@ $resultado = $mysqli->query($sql);
             ?>
         </div>
     </div>
-   
-
+    
     <footer>
         <p>"Não concordo nem discordo, muito pelo contrário"</p>
     </footer>

@@ -28,7 +28,7 @@ p.sair_btn {
     position: fixed;
     top: 30px;
     right: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(242, 33, 33);
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -58,6 +58,10 @@ div.main-content div .itens{
     border-radius: 10px;
 }
 
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 
 
 img.img_tenis {
